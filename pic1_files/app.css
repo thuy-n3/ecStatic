@@ -1,0 +1,474 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Header
+:: Footer
+:: Front page
+:: Pages
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+h1, h2, h3, h4, h5, p, a, li {
+    font-family: 'Calibri Light', Arial, Helvetica, sans-serif;
+    color: #555;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+h1.entry-title {
+    margin-top: 0;
+}
+
+h2 {
+    color: #4f8999;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    margin-bottom: 0.2em;
+}
+
+h3 {
+    font-size: 1.25em;
+    line-height: 1.2;
+    color: #888;
+}
+
+h4 {
+    font-size: 1.1em;
+    line-height: 1.2;
+}
+
+a {
+    color: #4f8999;
+}
+    a:hover {
+        color: #1f5e93;    
+    }
+
+li {
+    list-style-position: inside;
+}
+
+.button {
+    background-color: #205f94;    
+}
+
+.button.large {
+    font-size: 1.1em;
+}
+
+/* -----------------------------------------
+   Header
+----------------------------------------- */
+
+#header {
+    background-color: #205f94;
+}
+
+#header #logo {
+    margin:15px 10px 10px;
+    display: block;
+}
+
+#header li {
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+#header a {
+    color: #FFF;
+}
+
+
+/* Top small auxiliary menu */
+
+#menu-tool-links {
+    float: right;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+#menu-tool-links li {
+    display: inline-block;
+}
+
+#menu-tool-links li a {
+    font-size: 0.75em;
+    margin-left: 15px;
+    color: rgba(255,255,255,0.7);
+}
+
+
+/* Menu responsiveness */
+
+@media only screen and (max-width:768px) {
+    #header>.row {
+        min-height: 100px;
+    }
+    #header #logo {
+        position: absolute;
+        margin-top: 20px;
+    }
+    #header .large-12 {
+        padding: 0;
+    }
+    #menu-tool-links {
+        margin-right: 10px;
+    } 
+}
+
+@media only screen and (min-width:768px) {
+    .flexnav li:last-child a {
+        padding-right: 0;
+    } 
+}
+
+@media only screen and (min-width:780px) and (max-width:860px) {
+    
+    .flexnav li a {
+        padding: .96em 0.6em;
+        font-size: 1em;
+    }    
+}
+
+@media only screen and (min-width:768px) {
+    
+    .flexnav li a {
+        padding: .96em 0.45em;
+    }    
+}
+
+/* Nav menu styling in flexnav.css */
+
+
+
+/* -----------------------------------------
+   Footer
+----------------------------------------- */
+
+#footer {
+    margin-top: 100px;
+    border-top: 5px solid #4f8999;
+    margin-bottom: 20px;
+}
+
+#footer p {
+    margin-bottom: 0;
+    font-size: 0.875em;
+}
+
+#footer-logo {
+    display: block;
+    width: 200px;
+    margin: -71px auto 30px;
+}
+
+a.social-link {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-right: 10px;
+    background-image:url(../images/icons.png);
+    width: 42px;
+    height: 40px;
+}
+
+#facebook-link { background-position: 0 0; }
+#twitter-link { background-position: -42px 0; }
+#facebook-link:hover { background-position: 0 -41px; }
+#twitter-link:hover { background-position: -42px -41px; }
+
+#footer .phone-link {
+    font-size: 1.1em;
+}
+
+
+/* -----------------------------------------
+   Front page
+----------------------------------------- */
+
+
+#front-slider {     
+    position: relative;
+}
+
+#front-featured .rsGCaption {
+    background-color: transparent;
+    top: 4%;
+    left: 7%;
+    font-size: 1em;
+}
+
+#front-featured h1, #front-featured h2, #front-featured a {
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    color: #FFF;
+    text-shadow: 3px 3px 4px rgba(0,0,0,0.7);
+    text-transform: none;
+}
+
+#front-featured h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+#front-featured h2 {
+    font-size: 1.6em;
+}
+
+.rsBullets {
+    padding-bottom: 3px;
+}
+
+.rsBullet {padding: 5px 8px;}
+
+
+@media screen and (min-width:960px) and (min-height:660px) {
+  .royalSlider .rsOverflow,
+  .royalSlider {
+      height: 520px !important;
+  }
+}
+
+@media screen and (min-width:960px) and (min-height:1000px) {
+    .royalSlider .rsOverflow,
+    .royalSlider {
+        height: 660px !important;
+    }
+}
+@media screen and (max-width: 800px) {
+  .royalSlider,
+  .royalSlider .rsOverflow {
+    height: 200px !important;
+  }
+}
+
+@media only screen and (min-width:768px) {
+
+    #front-featured {
+        max-height: 300px;
+        overflow: hidden;
+    }
+
+    #front-featured h1 {
+        font-size: 3.2em;
+    }
+
+    #front-featured h2 {
+        font-size: 2.1em;
+    }
+
+    #front-featured .rsGCaption {
+        top: 10%;
+        left: 15%;
+    }
+
+    #front-featured .rsGCaption {
+        top: 6%;
+        left: 15%;
+    }    
+
+}
+
+#tagline {
+    padding: 20px 0;
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 30px;
+}
+
+#tagline h2 {
+    font-size: 1.5em;
+    color: #3b545b;
+    text-transform: none;
+}
+
+#tagline .button {
+    margin: 20px 0 0;
+}
+
+@media only screen and (max-width:768px) {
+    .call-to-action-button {
+        text-align: center;
+    }
+}
+
+.tile {
+    background-color: #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    min-height: 9.5em;
+    position: relative;
+}
+
+.tile h3, .tile a {
+    color: #FFF;
+}
+
+.tile h3 {
+    font-weight: normal;
+    font-size: 
+}
+
+#networking-tile { background-color: #48b700; }
+#development-tile { background-color: #1f5e93; }
+#imaging-tile { background-color: #008272; }
+#training-tile { background-color: #4f8999; }
+#blog-tile { background-color: #4f8999; }
+#work-tile { background-color: #48b700; }
+#contact-tile { background-color: #008272; }
+
+p.read-more-arrow {
+    text-align: right;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    margin-bottom: 0;
+}
+
+p.read-more-arrow a, a.right-arrow {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background-image: url(../images/icons.png);
+    background-position: -1px -81px;
+}
+
+#contact-tile h3 {
+    margin-bottom: 5px;
+}
+
+#contact-tile .phone-link {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+
+#contact-tile p {
+    margin-bottom: 0;
+}
+
+#contact-tile .mail-link {
+    font-size: 1.1em;
+}
+
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    #contact-tile .mail-link {
+        font-size: 0.9em;
+    }
+}
+
+
+/* Blog tile */
+
+.tile .read-more {
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.tile .read-more-button:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.blog-posts .columns:first-child {
+    border-right: 1px solid #FFF;
+}
+
+#blog-tile h4 {
+    font-size: 1em;
+    line-height: 1.1;
+}
+
+#blog-tile p {
+    margin-bottom: 10px;
+}
+
+.right-arrow {
+    display: block;
+    padding-right: 40px;
+    background-image: url(../images/icons.png);
+    background-position: 0 -81px; 
+    background-repeat: no-repeat;
+    height: 30px;
+}
+
+#blog-tile .right-arrow {
+    margin-left: 5px;
+}
+
+#blog-tile .see-more {
+    position: relative;
+    top: -8px;
+}
+
+.blog-post {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#nav-above {
+    margin-bottom: 30px;
+}
+
+.entry-meta {
+    color: #AAA;
+    margin-bottom: 40px;
+    font-size: 0.9em;
+}
+
+/* -----------------------------------------
+   Pages
+----------------------------------------- */
+
+#main-content {
+    margin-top:40px;
+    margin-bottom: 30px;
+}
+
+.post-image {
+    margin-bottom: 20px;
+}
+
+/* -----------------------------------------
+   Widgets
+----------------------------------------- */
+
+aside#text-2, aside#text-4 {
+    background-color: #8eaebb;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+aside#text-2 h2, aside#text-2 a,
+aside#text-4 h2, aside#text-4 a {
+    color:#FFF;
+    padding: 20px;
+}
+
+aside#text-2 p,
+aside#text-4 p {
+    text-align: center;    
+}
+
+aside#text-2 a,
+aside#text-4 a {
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+}
+
+aside.widget img {
+    margin-top: 20px;
+}
+
+.error404 .widget {
+    float: none;
+    width: 100%;
+}

@@ -1,0 +1,25 @@
+.container{
+	border: solid green 5px;
+}
+
+header{
+	border: solid purple 5px;
+	height: 50px;
+}
+
+.hero{
+	border: solid blue 5px;
+}
+
+.hero span{
+	color:  white;
+	font-size: 20px;
+}
+
+.frontImg{
+	max-height: 100%;
+	max-width: 100%;
+	overflow: hidden;
+	
+}
+
