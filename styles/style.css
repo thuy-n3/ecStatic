@@ -7,6 +7,21 @@ header{
 	height: 50px;
 }
 
+.logo{
+	border: pink solid 5px;
+	overflow: hidden;
+	max-height: 100%;
+	max-width: 100%;
+	/* max-height: 100%; 
+	max-width: 100%; */
+	/* display:  inline-block; */
+}
+
+.navBarContainer{
+	border: aqua soild 5px;
+	margin-left:50%;
+}
+
 .hero{
 	border: solid blue 5px;
 }
@@ -23,3 +38,7 @@ header{
 	
 }
 
+.overlayText{
+	border:  solid grey 5px;
+	
+}
